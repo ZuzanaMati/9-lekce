@@ -58,3 +58,17 @@ body {
 	opacity: 0.5;
 	height: 1000px;
 }
+
+.tlacitko {
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tlacitko:hover {
+	background-color: goldenrod;
+}
+
+.tlacitko:active {
+	box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.6);
+	transform: translate(3px, 7px);
+}

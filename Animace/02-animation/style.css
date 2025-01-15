@@ -11,8 +11,34 @@ body {
 	height: 250px;
 	border-radius: 50%;
 	background-color: #e74c3c;
+
+	animation-name: zmenbarvu;
+	animation-duration: 10s;
+	animation-delay: 3s;
+	animation-iteration-count: infinite;
 }
 
+@keyframes zmenbarvu {
+	0% {
+		background-color: #e74c3c;
+		transform: translate(0, 0);
+	}
+
+	33% {
+		background-color: green;
+		transform: translate(100px, 0);
+	}
+
+	66% {
+		background-color: aqua;
+		transform: translate(100px, 100px);
+	}
+
+	100% {
+		background-color: blue;
+		transform: translate(0, 0);
+	}
+}
 
 /*
 @keyframes example {
@@ -46,3 +72,4 @@ animation-fill-mode:
 	backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period
 	both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions
 */
+
